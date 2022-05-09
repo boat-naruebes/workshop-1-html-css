@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+.text{
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.zero{
+    background-color: white;
+    width: 100vw;
+    height: 85vh;
+}
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    align-items: flex-end;
+    /* background-color: aqua; */
+}
+.first, .second, .third, .four, .five{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+.second{
+    background-color: violet;
+    
+}
+.third{
+    background-color: #F5DEB3;
+}
+.four{
+    background-color: yellow;
+}
+.five{
+    background-color: green;
+}
