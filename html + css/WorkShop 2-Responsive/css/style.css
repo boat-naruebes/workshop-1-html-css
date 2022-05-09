@@ -1,0 +1,242 @@
+/* Styling here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.clearfloat::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav{
+    height: 60px;
+    background-color: black;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+nav .logo{
+  float: left;
+  padding: 15px;
+}
+nav .logo h1{
+    text-align: center;
+    color: white;
+}
+nav .menu{
+    float: right;
+    text-align: center;
+}
+nav li:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+nav li{
+    margin: 0 auto;
+    padding: 20px;
+    list-style: none;
+    color: white;
+    float: left;
+    text-align: center;
+}
+/* end nav style */
+
+#about{
+    border-bottom: 0.5px solid rgb(229, 229, 229);
+}
+.about-us{
+    margin-top: 20px; 
+    padding: 20px;
+    overflow: auto;
+   
+}
+.about-us .about-left{
+    float: left;
+}
+.about-us .about-right{
+    width: 380px;
+    float: left;
+    margin: 20px;
+}
+.about-us .about-right h1{
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.about-us .about-right a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none
+}
+.about-us .about-right a:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+}
+/* end about style */
+
+.service{
+    text-align: center;
+    margin: 50px;
+}
+.service-left{
+    float: left;
+    width: 50%;
+    height: 350px;
+    padding: 50px;
+    background-image: url("../img/service-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-left h1{
+    margin-bottom: 15px;
+}
+.service-left p{
+    margin-bottom: 15px;
+}
+.service-left a{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.service-left a:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+}
+
+.service-right{
+    float: left;
+    width: 50%;
+    height: 350px;
+    padding: 50px;
+    background-image: url("../img/service-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.service-right h1{
+    margin-bottom: 15px;
+}
+.service-right p{
+    margin-bottom: 15px;
+}
+.service-right a{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    
+}
+
+.service-right a:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+}
+/* End service style */
+
+.contact{
+    text-align: center;
+    margin: 50px;
+}
+.contact-left{
+    float: left;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+}
+
+.contact-left label{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    
+
+}
+.contact-left input{
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+}
+.contact-left button{
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+}
+
+.contact-right iframe{
+    float: right;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+}
+/* end contact */
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    border-top: 0.5px solid rgb(229, 229, 229);
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        height: 100px;
+    }
+    nav .logo {
+        padding-top: 15px;
+        float: none;
+    }
+    nav .menu {
+        text-align: center;
+        float: none;
+    }
+    nav li {
+        display: inline-block;
+        float: none;
+    }
+    .about .about-left img {
+        width: 100%;
+    }
+    nav .logo h1 {
+        text-align: center;
+    }
+    .about-us .about-left {
+        float: none;
+    }
+    .about-us .about-right{
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    .service-left{
+        float: none;
+        width: 100%;
+    }
+    .service-right{
+        float: none;
+        width: 100%;
+    }
+    .contact-left{
+        float: none;
+        width: 100%;
+    }
+    .contact-right iframe{
+        float: none;
+        width: 100%;
+    }
+}

@@ -1,0 +1,349 @@
+/* Write some code */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+nav{
+    background-color: #3097D7;
+    height: auto;
+}
+nav .container-flex{
+    display: flex;
+    justify-content: space-around;
+}
+nav .container-flex .logo{
+    padding-top: 10px;
+    text-align: center;
+}
+nav .container-flex .logo h1 a{
+    color: white;
+    text-decoration: none;
+}
+nav .container-flex ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav .container-flex ul li{
+    margin: 15px;
+    color: white;
+}
+nav .container-flex ul a{
+    color: white;
+    text-decoration: none;
+}
+nav .container-flex ul a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+nav .container-flex ul button{
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* end nav style */
+#banner{
+    display: flex;
+    background-image: url(../img/banner-bg.jpg);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.banner-flex .banner-title{
+    text-align: center;
+}
+.banner-flex .banner-title h1{
+    font-family: 'Permanent Marker';
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: white;
+}
+.banner-flex .banner-title p {
+    color: white;
+
+}
+.banner-flex .banner-title a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #FA1682;
+}
+.banner-flex .banner-title a:hover{
+    background-color: black;
+}
+
+/* end banner style */
+
+
+.tours-title{
+    text-align: center;
+    margin: 40px;
+}
+.picture-best-tours{
+    display: flex;
+    justify-content: center;
+}
+.picture-best-tours .tours{
+    position: relative;
+    padding: 5px;
+}
+.picture-best-tours img{
+    width: 100%;
+    height: 200px;
+    transition: 0.3s;
+}
+.picture-best-tours img:hover{
+    transform: translateY(10px);
+}
+.picture-best-tours .price{
+    background-color: #FA1682;
+    position: absolute;
+    top: 5px;
+    margin: 10px;
+    color: white;
+    padding: 5px;
+}
+.picture-best-tours .caption{
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: white;
+}
+/* end best tours */
+
+.our-clients{
+    text-align: center;
+    margin: 40px;
+}
+.picture-our-clients{
+    display: flex;
+    justify-content: center;
+    margin: 30px 50px;
+}
+.picture-our-clients img{
+    width: 150px;
+    height: 150px;
+    border-radius: 80%;
+    margin-bottom: 20px;
+}
+.our-clients-box{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.our-clients-box h1{
+    margin: 5px;
+}
+/* end out clients */
+footer{
+    background-color: #3097D7;
+    padding: 20px;
+}
+.footer-flex{
+    display: flex;
+    justify-content: center;
+}
+.footer-flex h1{
+    margin: 5px;
+}
+.footer-flex .detail{
+    width: 250px;
+    margin: 0 5px;
+    color: white;
+}
+.footer-flex .detail p{
+    padding-left: 15px;
+}
+.footer-flex .detail ul{
+    padding-left: 20px;
+    list-style: none;
+}
+.footer-flex .detail ul i{
+    margin-right: 10px;
+    color: #FA1682;
+}
+.footer-flex .contact ul{
+    padding-left: 40px;
+    list-style: none;
+}
+.footer-flex .contact ul i{
+    margin-right: 15px;
+    color: #FA1682;
+}
+footer li{
+    padding: 2px;
+}
+
+
+/* end index page */
+
+.about-out{
+    padding: 20px;
+}
+.about-out h1{
+    padding: 10px 0;
+}
+.about-out p{
+}
+#about img{
+    width: 100%;
+    padding: 20px;
+}
+
+/* end  about page */
+
+
+.out-tout{
+    text-align: center;
+    margin: 20px;
+}
+.pic-col1, .pic-col2{
+    display: flex;
+    justify-content: center;
+}
+.pic-col1 img, .pic-col2 img{
+    width: 200px;
+    height: 270px;
+    margin: 10px;
+}
+.detail{
+    position: relative;
+}
+.detail figcaption h1{
+    background-color: #FA1682;
+    position: absolute;
+    bottom: 40px;
+    margin: 20px;
+    left: 5px;
+    color: white;
+    font-size: 20px;
+}
+.detail figcaption p{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    margin: 10px;
+    left: 20px;
+}
+
+/* end tours page */
+
+
+.contact-title{
+    text-align: center;
+    margin: 25px 0;
+}
+.form form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.form label{
+    margin: 50px;
+}
+.form a{
+    display: inline-block;
+    color: white;
+    background-color: #2C97D7;
+    position: relative;
+    left: 50%;
+    transform: translateX(-45%);
+    padding: 5px 20px;
+    text-decoration: none;
+}
+.img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.img img{
+    width: 80%;
+    margin: 20px;
+    border-radius: 2%;
+}
+
+/* responsive index page */
+
+@media only screen and (max-width: 480px){
+
+    #banner{
+        background-size: cover;
+    }
+    nav .container-flex {
+        flex-direction: column;
+    }
+    nav .container-flex ul {
+        flex-direction: column;
+    }
+    nav .container-flex ul li {
+        text-align: center;
+        padding: 10px;
+    }
+    .banner-flex .banner-title h1 {
+        font-size: 45px;
+    }
+    .banner-flex .banner-title p {
+        padding: 10px;
+    }
+    .picture-best-tours {
+        flex-direction: column;
+    }
+    .picture-our-clients {
+        flex-direction: column;
+    }
+    .footer-flex{
+        flex-direction: column;
+    }
+    .footer-flex .travelgood {
+        text-align: center;
+    }
+    .footer-flex .detail p{
+        padding-left: 40px;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    nav .container-flex ul li {
+        margin: 0px;
+    }
+  }
+
+  /* response about */
+
+@media only screen and (max-width: 480px)  {
+    .about-out {
+        padding: 10px 25px;
+    }
+    .about-out p {
+        padding-right: 50px;
+        width: 100vw;
+    }
+    #about img {
+        width: 100vw;
+        padding: 9px 25px;
+    }   
+}
+
+/* response tours page */
+
+@media only screen and (max-width: 480px) {
+    .flex-colum{
+        display: flex;
+        flex-direction: row;
+    }
+    .pic-col1, .pic-col2{
+        flex-direction: column;
+    }
+}
