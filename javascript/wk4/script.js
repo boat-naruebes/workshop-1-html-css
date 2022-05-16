@@ -1,14 +1,7 @@
-var getswit = document.getElementById('swit')
+var open = document.querySelector('.button');
+var close = document.querySelector('.default');
+open.addEventListener('click', change);
+
 function change(){
-    console.log(getswit.className)
-    if(getswit.className == "close default"){
-        getswit.style.transform = "translateX(220px)";
-        getswit.className = "open default";
-    }
-    else if(getswit.className == "open default"){
-        getswit.style.transform = "translateX(0px)";
-        getswit.className = "close default";
-    }
-    
-    // getswit.style.transform = "translateX(0px)";
+    close.classList.toggle('close');
 }

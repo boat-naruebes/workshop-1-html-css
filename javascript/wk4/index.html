@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <title>Menu With Flexbox</title>
 </head>
 
 <body>
     <div class="flex-container">
         <ul>
-            <li>Dashboard</li>
-            <li>Charts</li>
-            <li>Milestone</li>
-            <li>Lab</li>
-            <li>Preview</li>
-            <li>Assets</li>
-            <li>Settings</li>
-            <li>Logout</li>
+            <li><a href="#"> Dashboard</a></i></li>
+            <li><a href="#"> Charts</a></li>
+            <li><a href="#"> Milestone</a></li>
+            <li><a href="#"> Lab</a></li>
+            <li><a href="#"> Preview</a></li>
+            <li><a href="#"> Assets</a></li>
+            <li><a href="#"> Settings</a></li>
+            <li><a href="#"> Logout</a></li>
         </ul>
     </div>
-    <div class="close default" id = 'swit'>
-        <button onclick="change()">swit</button>
+    
+
+    <div class="default">
+        <a href="#" class = "button">
+            <svg  viewBox="0 0 100 100"> <!-- ต่ำแหน่ง x, ต่ำแหน่ง y, ขนาดกว้างของกล่อง, ขนาดยาวของกล่อง  -->
+                <line x1 ='0' y1 ='20' x2 ='100' y2 ='20'></line> <!--เส้น x1 ไป x2-->
+                <line x1 ='0' y1 ='50' x2 ='100' y2 ='50'></line>
+                <line x1 ='0' y1 ='80' x2 ='100' y2 ='80'></line>
+            </svg>
+        </a>
         <h1>Flexbox Off Canvas Menu</h1>
     </div>
 

@@ -1,8 +1,10 @@
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'); */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 .default{
     width: 100%;
     height: 100vh;
@@ -10,6 +12,14 @@
     padding: 50px;
     transition: 0.3s;
     transform: translateX(0px);
+}
+.close{
+    width: 100%;
+    height: 100vh;
+    /* background-color: white; */
+    padding: 50px;
+    transition: 0.3s;
+    transform: translateX(220px);
 }
 .flex-container ul{
     position: absolute;
@@ -20,15 +30,54 @@
     width: 220px;
     height: 100vh;
 }
-.flex-container ul li{
-    
-    margin-top: 10px;
-    padding: 5% 35%;
-    height: 50px;
-    color: white;
-    list-style-type: none;
-    font-size: 18px;
-}
 .flex-container ul li:hover, .flex-container ul li:nth-child(1){
     background-color: #1F2228;
 }
+.button svg{
+    width: 40px;
+    /* background-color: red; */
+}
+.button line {
+    stroke: black;
+    stroke-width: 2;
+}
+.flex-container ul li{
+    margin-top: 10px;
+    padding: 5% 35%;
+    height: 50px;
+    list-style-type: none;
+    font-size: 18px;
+}
+.flex-container ul li a{
+    color: white;
+    text-decoration: none;
+}
+.flex-container ul li a::before { 
+    font: 14px fontawesome;
+    position: absolute;
+    left: 50px;
+ }
+.flex-container ul li:nth-child(1) a::before{ 
+    content: '\f00a';
+ }
+.flex-container ul li:nth-child(2) a::before{ 
+    content: '\f012';
+ }
+.flex-container ul li:nth-child(3) a::before{ 
+    content: '\f0e8';
+ }
+.flex-container ul li:nth-child(4) a::before{ 
+    content: '\f0c3';
+ }
+.flex-container ul li:nth-child(5) a::before{ 
+    content: '\f022';
+ }
+.flex-container ul li:nth-child(6) a::before{ 
+    content: '\f115';
+ }
+.flex-container ul li:nth-child(7) a::before{ 
+    content: '\f085';
+ }
+.flex-container ul li:nth-child(8) a::before{ 
+    content: '\f023';
+ }
