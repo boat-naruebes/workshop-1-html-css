@@ -1,40 +1,51 @@
 const addText = document.querySelector('.item a');
 const input_text = document.querySelector('input');
-const get_display_box = document.querySelector('.display-box');
+const ul_element = document.querySelector('ul');
 
-// console.log(input_text);
+addText.addEventListener('click', create_Element);
+input_text.addEventListener("keypress", getenterkey);
 
-addText.addEventListener('click', function(){
-   let text_value =  input_text.value;
-   input_text.value = "";
-   let create_H2 = document.createElement("h2");
-   let create_A = document.createElement("a");
-
-   create_A.addEventListener("click", delete_H2)
-   create_H2.addEventListener("click", change_style);
-   if(text_value != ""){
-      get_display_box.appendChild(create_H2).innerText = text_value;
-      create_H2.appendChild(create_A);
-      create_H2.className = "display-text";
+function getenterkey(event) {
+   if (event.key == "Enter") {
+      create_Element();
    }
-   
-
-
- function change_style(){
-    create_H2.classList.toggle("display-text");
-    create_H2.classList.toggle("click");  
- }
-
- function delete_H2(){
-    console.log("test");
-   get_display_box.removeChild(create_H2);
 }
 
-   
-// ------------------------- เพิ่ม class ------------------
-//     createElement.className = "display-text";                 
-//    createElement.setAttribute("class","display-text")
-//  createElement.classList.add("display-text");
-   
+function create_Element() {
+   let li_create = document.createElement("li");
+   let create_A_element = document.createElement("a");
+   let text_value = input_text.value;
+   input_text.value = "";
+   create_A_element.addEventListener("click", delete_H2)
+   li_create.addEventListener("click", change_style);
 
-})
+   function change_style() {
+      li_create.classList.toggle("click");
+   }
+   function delete_H2() {
+
+      ul_element.removeChild(li_create);
+   }
+
+   if (text_value != "") {
+      ul_element.appendChild(li_create).innerText = text_value;
+      li_create.appendChild(create_A_element);
+      li_create.className = "display-text";
+   }
+}
+
+
+// ------------------------- เพิ่ม class ------------------
+// 1. createElement.className = "display-text";
+// 2. createElement.setAttribute("class","display-text")
+// 3. createElement.classList.add("display-text");
+
+
+// ------------------------- ลบ element ------------------
+// 1. create_H2.className = "delete";
+// 2. get_display_box.removeChild(create_H2);
+
+
+// ------------------------- ใส่ ข้อความ ------------------
+// 1. createTextNode("test")
+// 2. innerText = "tets"

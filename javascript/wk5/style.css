@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-background-color: #04a1bf;
+    background-color: #04a1bf;
 }
 .item, .detail{
     text-align: center;
@@ -23,15 +23,12 @@ background-color: #04a1bf;
     display: flex;
     justify-content: center;
 }
-svg{
-    background-color: #025F70;
-    border-radius: 10%;
-}
 .item a{
     width: 50px;
-    height: 50px;
     margin-left: 20px;
     position: relative;
+    background-color: #025F70;
+    border-radius: 10%;
 }
 .item a::before{
     position: absolute;
@@ -47,14 +44,13 @@ svg{
     margin-bottom: 15px;
 }
 .display-text{
-    background-color: #4eb9cd;
-}
-.display-text, .click{
     color: white;
     margin-bottom: 15px;
     font-size: 20px;
     padding: 10px 20px;
     transition: 0.3s;
+    list-style: none;
+    background-color: #4eb9cd;
 }
 .display-text:hover{
     background-color: #76CFE0;
@@ -67,5 +63,8 @@ svg{
     padding: 5px 15px;
 }
 .click{
-    background-color: #51DF70;
+    background-color: #51DF70 !important;
+}
+.delete{
+    display: none;
 }
