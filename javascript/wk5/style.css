@@ -1,0 +1,71 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+background-color: #04a1bf;
+}
+.item, .detail{
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+.input{
+    width: 400px;
+    height: 50px;
+    text-align: left;
+    font-size: 22px;
+    padding: 20px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+}
+svg{
+    background-color: #025F70;
+    border-radius: 10%;
+}
+.item a{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    position: relative;
+}
+.item a::before{
+    position: absolute;
+    font: 20px fontawesome; 
+    content: '\f303';
+    color: white;
+    left: 25%;
+    bottom: 30%;
+}
+.display-box{
+    margin: 0 auto;
+    width: 95vw;
+    margin-bottom: 15px;
+}
+.display-text{
+    background-color: #4eb9cd;
+}
+.display-text, .click{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.display-text:hover{
+    background-color: #76CFE0;
+}
+.display-text a::before, .click a::before{
+    position: absolute;
+    font: 20px fontawesome; 
+    content: '\f00d';
+    right: 80px;
+    padding: 5px 15px;
+}
+.click{
+    background-color: #51DF70;
+}
