@@ -1,44 +1,25 @@
 const url = "https://randomuser.me/api/?results=100";
-const Fecthdata = document.querySelector(".fecth-data");
+var Fetchdata = document.getElementById("fecth-data");
 var fetchData = async () => {
     let respone = await fetch(url);
     let jsonData = await respone.json();
     return jsonData;
 }
-
 fetchData().then(data =>{
     data.results.forEach(item => {
-        getNameData(item.name.first, item.name.last, item.picture.large)
-    });
+        var createTable = document.createElement("table")
+        createTable.innerHTML = 
+        `<td>
+              <img src = ${item.picture.large}>
+        </td>
+        <td>
+            First Name: ${item.name.first}<br>
+            Last Name: ${item.name.last}
+        </td>`;
+        Fetchdata.appendChild(createTable);
+    })
+    console.log(Fetchdata);
 });
-
-function getNameData(addFirstName, addLastName, getimg){
-    let flexContainerDiv  = document.createElement("div");
-    let createDivRight = document.createElement("div")
-    let createDivLeft = document.createElement("div")
-    let createfirst = document.createElement("h4");
-    let createlast = document.createElement("h4");
-
-    let createImg = document.createElement("img");
-    createImg.setAttribute("src", getimg);
-
-    createfirst.innerText = `First Name: ${addFirstName}`;
-    createlast.innerText = `Last Name: ${addLastName}`;
-
-    flexContainerDiv.appendChild(createDivLeft);
-    flexContainerDiv.appendChild(createDivRight);
-    createDivLeft.appendChild(createImg);
-
-    createDivRight.appendChild(createfirst);
-    createDivRight.appendChild(createlast);
-    Fecthdata.appendChild(flexContainerDiv);
-
-    flexContainerDiv.classList.add("flex-container");
-    createDivRight.classList.add("right")
-    createfirst.classList.add("first");
-    createlast.classList.add("last");
-    createDivLeft.classList.add("left")
-}
 
 //foreach loop
 // วิธีที่ 1
